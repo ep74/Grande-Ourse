@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grande Ourse — Métaphysique Chinoise | Emmanuelle Pellet</title>
+    <meta name="description"
+        content="Consultations en métaphysique chinoise : Bazi, Qi Men Dun Jia, Feng Shui, Sélection de dates, Étoile Pourpre. Praticienne certifiée Ming Shan. Votre voyage céleste commence ici." />
+    <meta name="keywords"
+        content="métaphysique chinoise, grande ourse, bazi, feng shui, qi men dun jia, sélection de dates, étoile pourpre, astrologie, numérologie, consultation, Emmanuelle Pellet, Fabrice Jordan, Ming Shan" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Grande Ourse — Métaphysique Chinoise | Emmanuelle Pellet">
+    <meta property="og:description"
+        content="Explorez la sagesse de la Métaphysique Chinoise, le Feng Shui et les arts énergétiques pour retrouver équilibre et clarté.">
+    <meta property="og:image" content="https://emmanuellepellet.fr/og-image.jpg">
+    <meta property="og:url" content="https://emmanuellepellet.fr">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grande Ourse — Métaphysique Chinoise | Emmanuelle Pellet">
+    <meta name="twitter:description" content="Retrouvez équilibre, énergie et sens grâce à la Métaphysique Chinoise.">
+    <meta name="twitter:image" content="https://emmanuellepellet.fr/og-image.jpg">
+
+</head>
+
+<body>
+
+    <!-- Starfield Canvas -->
+    <canvas id="starfield"></canvas>
+    <div class="aurora-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="star-icon">✦</span>
+            Grande Ourse
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#voyage">Le Voyage</a></li>
+            <li><a href="#etoiles">Les 7 Étoiles</a></li>
+            <li><a href="#packs">Packs</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://mingshan-emmanuellepellet.setmore.com/" target="_blank" rel="noopener"
+                    class="nav-cta">Réserver</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Métaphysique Chinoise · Praticienne certifiée Ming Shan</span>
+            <h1>La Grande Ourse <span class="gold">guide</span> votre chemin</h1>
+            <p class="hero-subtitle">L'Éventail des 7 Étoiles</p>
+            <p class="hero-desc">
+                Chaque étoile de la constellation éclaire une facette de votre vie.
+                Pour naviguer vers votre Destinée, choisissez celle qui répond le mieux
+                à votre problématique actuelle.
+            </p>
+            <a href="https://mingshan-emmanuellepellet.setmore.com/" target="_blank" rel="noopener" class="hero-cta">
+                Commencer le voyage ✦
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Explorer</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section" id="voyage">
+        <div class="section-header reveal">
+            <span class="label">✨ Le Voyage</span>
+            <h2>Retrouvez votre boussole intérieure</h2>
+        </div>
+        <div class="intro-text reveal">
+            <p>
+                Imaginez que votre vie soit une navigation sous la voûte céleste. Parfois, les nuages cachent l'horizon.
+            </p>
+            <p>
+                Je vous propose d'ouvrir l'éventail des arts métaphysiques pour retrouver
+                votre <span class="highlight">boussole intérieure</span>, guidée par les sept lumières de la Grande
+                Ourse.
+            </p>
+            <p>
+                Ce voyage est une invitation à reprendre les commandes de votre destinée. En tant que praticienne
+                certifiée par
+                <span class="highlight">Ming Shan</span>, je ne vous propose pas de lire votre avenir, mais de vous
+                donner
+                les cartes et la boussole pour le dessiner, sous la protection bienveillante des étoiles.
+            </p>
+        </div>
+    </section>
+
+    <!-- 7 Étoiles — Bento Grid -->
+    <section class="section" id="etoiles">
+        <div class="section-header reveal">
+            <span class="label">🌟 Les 7 Étoiles</span>
+            <h2>L'Éventail de vos possibles</h2>
+            <p>Chaque étoile éclaire une facette de votre destinée. Ensemble, elles forment la constellation de votre
+                transformation.</p>
+        </div>
+
+        <div class="bento-grid">
+
+            <!-- Étoile 1 -->
+            <div class="bento-card reveal reveal-delay-1">
+                <div class="star-number"><span class="star-dot"></span> Première Étoile</div>
+                <h3>L'architecture de vos talents</h3>
+                <p class="card-subtitle">La structure de votre navire · Bazi Classique</p>
+                <p>C'est l'étoile de votre fondation. Nous décodons votre thème de naissance, votre ADN énergétique,
+                    pour comprendre la force de votre bois, la clarté de votre feu, le tranchant de votre métal, la
+                    capacité à transformer de la terre ou la profondeur de votre eau. Découvrez votre signature unique
+                    et votre véritable potentiel.</p>
+            </div>
+
+            <!-- Étoile 2 -->
+            <div class="bento-card reveal reveal-delay-2">
+                <div class="star-number"><span class="star-dot"></span> Deuxième Étoile</div>
+                <h3>La danse de l'influence</h3>
+                <p class="card-subtitle">Le vent dans vos voiles · Qi Men Dun Jia</p>
+                <p>L'art de la stratégie impériale. Cette étoile vous guide dans les moments de choix cruciaux pour que
+                    vos décisions soient d'une fluidité absolue.</p>
+            </div>
+
+            <!-- Étoile 3 -->
+            <div class="bento-card reveal reveal-delay-3">
+                <div class="star-number"><span class="star-dot"></span> Troisième Étoile</div>
+                <h3>Le sanctuaire de votre ambition</h3>
+                <p class="card-subtitle">Le port d'attache · Feng Shui</p>
+                <p>Nous harmonisons votre « Palais » pour qu'il devienne un écrin régénérant, un sanctuaire qui soutient
+                    votre expansion.</p>
+            </div>
+
+            <!-- Étoile 4 -->
+            <div class="bento-card reveal reveal-delay-4">
+                <div class="star-number"><span class="star-dot"></span> Quatrième Étoile</div>
+                <h3>La danse avec le temps</h3>
+                <p class="card-subtitle">Le rythme des marées · Sélection de dates</p>
+                <p>Votre boussole temporelle. Nous choisissons le « Timing Céleste » idéal pour vos projets majeurs.</p>
+            </div>
+
+            <!-- Étoile 5 — Polaire -->
+            <div class="bento-card polaris reveal reveal-delay-5">
+                <div class="star-number"><span class="star-dot"></span> Cinquième Étoile · L'Étoile Polaire</div>
+                <h3>Le chemin vers votre esprit originel</h3>
+                <p class="card-subtitle">Le cœur de la boussole · Yuan Shen · Bazi Spirituel</p>
+                <p>Ici, le voyage devient intérieur. C'est l'étoile de la reconnexion à votre âme. Nous levons le voile
+                    sur votre quête de sens pour que votre réussite extérieure ne soit que le reflet de votre sérénité
+                    profonde. Le cœur sacré de votre constellation personnelle.</p>
+            </div>
+
+            <!-- Étoile 6 -->
+            <div class="bento-card reveal reveal-delay-6">
+                <div class="star-number"><span class="star-dot"></span> Sixième Étoile</div>
+                <h3>La symphonie de vos relations</h3>
+                <p class="card-subtitle">L'harmonie de l'équipage · 9 Palais</p>
+                <p>En comprenant la numérologie de vos relations, vous transformez les frictions en résonances
+                    harmonieuses.</p>
+            </div>
+
+            <!-- Étoile 7 -->
+            <div class="bento-card reveal reveal-delay-7">
+                <div class="star-number"><span class="star-dot"></span> Septième Étoile</div>
+                <h3>Votre horizon céleste</h3>
+                <p class="card-subtitle">La lumière du phare · Étoile Pourpre & Prévisions</p>
+                <p>Une vision claire des courants de l'année à venir. Votre radar pour piloter votre vie avec une
+                    longueur d'avance.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Packs -->
+    <section class="section" id="packs">
+        <div class="section-header reveal">
+            <span class="label">🧭 Packs d'Exploration</span>
+            <h2>Choisir votre escale</h2>
+            <p>Le voyage vers soi se décline selon vos besoins du moment. Choisissez l'embarcation qui vous correspond.
+            </p>
+        </div>
+
+        <div class="packs-grid">
+
+            <!-- Pack 1 — Éclaircie -->
+            <div class="pack-card reveal reveal-delay-1">
+                <span class="pack-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="18" stroke="#d4af37" stroke-width="1" fill="none" opacity="0.3" />
+                        <path d="M24 8 L26 18 L24 16 L22 18 Z" fill="#d4af37" opacity="0.9" />
+                        <circle cx="24" cy="24" r="3" fill="#d4af37" />
+                        <path d="M24 10 L24 6 M34 24 L38 24 M24 38 L24 42 M10 24 L6 24" stroke="#d4af37"
+                            stroke-width="0.8" opacity="0.5" />
+                        <path d="M18 12 L16 8 M30 12 L32 8 M36 18 L40 16 M36 30 L40 32" stroke="#d4af37"
+                            stroke-width="0.5" opacity="0.3" />
+                    </svg>
+                </span>
+                <h3>L'Escale « Éclaircie »</h3>
+                <p class="pack-tagline">À l'unité — Pour lever un doute</p>
+                <p>Une immersion ciblée dans l'une des 7 étoiles pour débloquer une situation précise ou découvrir votre
+                    architecture intérieure.</p>
+                <div class="price">160€ <small>/ étoile</small></div>
+                <a href="https://mingshan-emmanuellepellet.setmore.com/services/71421e88-8b8b-493b-b72d-17787a592946"
+                    target="_blank" rel="noopener" class="btn-book">Réserver ✦</a>
+            </div>
+
+            <!-- Pack 2 — Escale Sanctuaire (Feng Shui) -->
+            <div class="pack-card reveal reveal-delay-2">
+                <span class="pack-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6 L40 20 L40 42 L8 42 L8 20 Z" stroke="#d4af37" stroke-width="1" fill="none"
+                            opacity="0.3" />
+                        <path d="M18 42 L18 30 L30 30 L30 42" stroke="#d4af37" stroke-width="1" fill="none"
+                            opacity="0.5" />
+                        <circle cx="24" cy="22" r="4" stroke="#d4af37" stroke-width="0.8" fill="none" opacity="0.6" />
+                        <path d="M24 18 L24 26 M20 22 L28 22" stroke="#d4af37" stroke-width="0.6" opacity="0.4" />
+                        <path d="M12 42 L12 24 M36 42 L36 24" stroke="#d4af37" stroke-width="0.5" opacity="0.2" />
+                        <circle cx="24" cy="22" r="1.5" fill="#d4af37" opacity="0.8" />
+                    </svg>
+                </span>
+                <h3>L'Escale « Sanctuaire »</h3>
+                <p class="pack-tagline">Feng Shui — Harmonisez votre espace</p>
+                <p>Votre environnement est le miroir de votre ciel intérieur. Nous harmonisons votre lieu de vie ou de
+                    travail pour qu'il devienne un écrin régénérant qui soutient votre expansion.</p>
+                <div class="price">250€</div>
+                <a href="https://mingshan-emmanuellepellet.setmore.com/services/ed9006b8-feac-4795-adfb-329803e9c493"
+                    target="_blank" rel="noopener" class="btn-book">Réserver ✦</a>
+            </div>
+
+            <!-- Pack 3 — Cap Horizon -->
+            <div class="pack-card featured reveal reveal-delay-3">
+                <span class="pack-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="20" stroke="#d4af37" stroke-width="0.5" fill="none" opacity="0.2" />
+                        <circle cx="24" cy="24" r="14" stroke="#d4af37" stroke-width="0.8" fill="none" opacity="0.3" />
+                        <path d="M24 4 L24 10 M24 38 L24 44 M4 24 L10 24 M38 24 L44 24" stroke="#d4af37"
+                            stroke-width="0.8" opacity="0.4" />
+                        <circle cx="16" cy="16" r="1.5" fill="#d4af37" opacity="0.7" />
+                        <circle cx="30" cy="14" r="1.2" fill="#d4af37" opacity="0.6" />
+                        <circle cx="32" cy="28" r="1" fill="#d4af37" opacity="0.5" />
+                        <path d="M16 16 L30 14 L32 28" stroke="#d4af37" stroke-width="0.6" opacity="0.4" />
+                        <path d="M24 24 L30 14" stroke="#d4af37" stroke-width="0.5" stroke-dasharray="2 2"
+                            opacity="0.3" />
+                        <circle cx="24" cy="24" r="2" fill="#d4af37" opacity="0.9" />
+                    </svg>
+                </span>
+                <h3>Le Pack « Cap Horizon »</h3>
+                <p class="pack-tagline">Accompagnement thématique — 3 étoiles</p>
+                <p>Un parcours combinant 3 étoiles pour poser des fondations solides à votre nouveau projet de vie ou
+                    professionnel. Bazi, Feng Shui et Sélection de dates pour naviguer sereinement à travers une période
+                    de transition.</p>
+                <div class="price">550€</div>
+                <a href="https://mingshan-emmanuellepellet.setmore.com/services/a21082ca-1b4c-488a-bb8f-45bb32a1d851"
+                    target="_blank" rel="noopener" class="btn-book">Réserver ✦</a>
+            </div>
+
+            <!-- Pack 4 — Odyssée Grande Ourse -->
+            <div class="pack-card reveal reveal-delay-4">
+                <span class="pack-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="20" stroke="#d4af37" stroke-width="0.5" fill="none" opacity="0.15" />
+                        <circle cx="24" cy="24" r="15" stroke="#d4af37" stroke-width="0.5" fill="none" opacity="0.1" />
+                        <!-- 7 stars of Big Dipper -->
+                        <circle cx="30" cy="14" r="1.5" fill="#d4af37" opacity="0.9" />
+                        <circle cx="34" cy="18" r="1.3" fill="#d4af37" opacity="0.8" />
+                        <circle cx="32" cy="24" r="1.3" fill="#d4af37" opacity="0.8" />
+                        <circle cx="28" cy="22" r="1.3" fill="#d4af37" opacity="0.8" />
+                        <circle cx="22" cy="26" r="1.2" fill="#d4af37" opacity="0.7" />
+                        <circle cx="17" cy="30" r="1.2" fill="#d4af37" opacity="0.7" />
+                        <circle cx="12" cy="34" r="1.2" fill="#d4af37" opacity="0.7" />
+                        <!-- Constellation lines -->
+                        <path d="M30 14 L34 18 L32 24 L28 22 L30 14 M28 22 L22 26 L17 30 L12 34" stroke="#d4af37"
+                            stroke-width="0.6" opacity="0.4" />
+                        <!-- Polaris -->
+                        <circle cx="26" cy="8" r="2.5" fill="#d4af37" opacity="0.5" />
+                        <circle cx="26" cy="8" r="1" fill="#f0d060" />
+                        <path d="M30 14 L26 8" stroke="#d4af37" stroke-width="0.4" stroke-dasharray="1.5 2"
+                            opacity="0.3" />
+                    </svg>
+                </span>
+                <h3>L'Odyssée « Grande Ourse »</h3>
+                <p class="pack-tagline">Le voyage transformationnel complet</p>
+                <p>Une exploration intégrale des 7 étoiles au fil des mois. Un alignement total entre votre corps (Qi
+                    Gong), votre esprit (Nei Dan) et votre destinée (Métaphysique) pour une vie en pleine résonance.</p>
+                <div class="price">Sur mesure</div>
+                <a href="https://mingshan-emmanuellepellet.setmore.com/services/dd251e0f-fe65-4b80-8fd3-275ea244873a"
+                    target="_blank" rel="noopener" class="btn-book">Réserver ✦</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section" id="apropos">
+        <div class="section-header reveal">
+            <span class="label">✦ À propos</span>
+            <h2>De la lignée au Destin : la voie des étoiles</h2>
+        </div>
+
+        <div class="about-section">
+
+            <div class="about-block reveal">
+                <h3>L'héritage de la clarté</h3>
+                <p>Mon chemin dans les arts métaphysiques n'est pas né du hasard, mais d'une quête de structure et de
+                    sens. Formée par <strong>Fabrice Jordan</strong>, Médecin, Maître taoïste et Directeur du Centre
+                    Ming Shan en Suisse, j'ai reçu un enseignement où la rigueur de la tradition rencontre les besoins
+                    du monde moderne.</p>
+                <p>De cet héritage précieux, j'ai puisé une certitude : nous ne sommes pas les jouets du destin, nous en
+                    sommes les architectes. Mais pour bâtir, encore faut-il connaître la nature du terrain et la
+                    direction des vents.</p>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-block reveal">
+                <h3>Une sagesse expérimentée</h3>
+                <p>Ma pratique ne s'arrête pas aux calculs et aux cartes. Elle prend racine dans le corps et le souffle.
+                    Depuis plus de 15 ans, le Tai Chi et le Qi Gong façonnent ma perception de l'énergie. À travers le
+                    <em>Bei Dou Xuan Gong</em> (la pratique mystérieuse de la Grande Ourse) et la méditation <em>Nei
+                        Dan</em> (l'alchimie interne), j'ai appris à cultiver la clarté et l'alignement que je vous
+                    transmets aujourd'hui.
+                </p>
+                <p>Cette expérience de terrain me permet de vous accompagner non pas comme une simple analyste, mais
+                    aussi comme une pratiquante qui maintient sa vitalité en faisant circuler le Qi dans le corps.</p>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-block reveal">
+                <h3>La boussole et la Grande Ourse</h3>
+                <p>Dans la tradition taoïste, la Grande Ourse (Beidou) est bien plus qu'une constellation : c'est
+                    l'horloge cosmique, la boussole qui guide les empereurs et les sages depuis des millénaires. Elle
+                    est le pont entre le ciel et la terre, le mouvement et l'immobilité.</p>
+                <p>C'est sous l'égide de ces sept étoiles que j'ai conçu mon approche. Pour vous, femme de stratégie et
+                    d'action qui traversez aujourd'hui une zone de brouillard, je déploie cet héritage comme un éventail
+                    de solutions concrètes.</p>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-block reveal">
+                <h3>Mon engagement : une spiritualité incarnée</h3>
+                <p>Ici, pas de prédictions fatalistes ni de promesses vaporeuses. Mon travail consiste à traduire le
+                    langage des étoiles en leviers décisionnels.</p>
+                <p>Que nous utilisions le <strong>Bazi</strong> pour identifier votre ADN énergétique et vos talents
+                    cachés, le <strong>Qi Men Dun Jia</strong> pour orchestrer vos victoires stratégiques, la
+                    <strong>Sélection de dates</strong> pour agir au moment où le Ciel vous soutient, le <strong>Jiu
+                        Gong Ming Li</strong> pour créer une symphonie dans vos relations, ou le <strong>Feng
+                        Shui</strong> pour cartographier votre architecture intérieure et créer votre sanctuaire du
+                    succès — mon but reste le même : <em>vous rendre les clés de votre propre boussole</em>.
+                </p>
+                <p>Je ne vous propose pas seulement une consultation, mais un <strong>Voyage Céleste</strong> — une
+                    odyssée vers ce lieu en vous où tout devient fluide, juste et puissant.</p>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-signature reveal">
+                <h3>Ma Signature</h3>
+                <p>Formée à l'excellence par Fabrice Jordan au centre européen <strong>Ming Shan</strong> en Suisse,
+                    j'allie la précision et la technicité des certifications à une vision pragmatique et inspirée. Mon
+                    approche ne prédit pas votre futur : elle vous donne les clés pour le créer.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h4>✦ Grande Ourse</h4>
+                <p>Métaphysique Chinoise · Praticienne certifiée Ming Shan · Emmanuelle Pellet</p>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact</h5>
+                <a href="mailto:consultation@emmanuellepellet.fr">
+                    ✉ consultation@emmanuellepellet.fr
+                </a>
+                <a href="tel:+33660675347">
+                    ☎ 06 60 67 53 47
+                </a>
+                <a href="https://wa.me/33660675347?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20consultations."
+                    target="_blank" rel="noopener" class="btn-whatsapp">
+                    💬 Envoyer un message WhatsApp
+                </a>
+            </div>
+            <div class="footer-contact">
+                <h5>Réserver</h5>
+                <a href="https://mingshan-emmanuellepellet.setmore.com/" target="_blank" rel="noopener">
+                    🗓 Calendrier de réservation
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Emmanuelle Pellet — Grande Ourse · Métaphysique Chinoise. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
