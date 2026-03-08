@@ -4,7 +4,7 @@
    ============================================ */
 
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@200;300;400;500;600;700&family=Allura&display=swap');
 
 /* --- CSS Custom Properties --- */
 :root {
@@ -296,7 +296,7 @@ img {
 .hero-badge {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -306,9 +306,10 @@ img {
   border-radius: 30px;
   margin-bottom: 2rem;
   background: rgba(212, 175, 55, 0.05);
+  line-height: 1.8;
 }
 
-.hero h1 {
+.hero-title {
   font-family: var(--font-heading);
   font-size: clamp(2.8rem, 6vw, 5rem);
   font-weight: 300;
@@ -317,7 +318,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.hero h1 .gold {
+.hero-title .gold {
   color: var(--gold);
   font-style: italic;
 }
@@ -337,6 +338,14 @@ img {
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.8;
+}
+
+.hero-cta-wrapper {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  margin: 0;
+  line-height: inherit;
 }
 
 .hero-cta {
@@ -438,6 +447,15 @@ img {
 }
 
 .section-header h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.section-header .section-title {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 400;
@@ -592,6 +610,15 @@ img {
   line-height: 1.3;
 }
 
+.bento-card .card-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+
 .bento-card .card-subtitle {
   font-family: var(--font-heading);
   font-size: 0.95rem;
@@ -604,6 +631,39 @@ img {
   font-size: 0.88rem;
   color: rgba(245, 245, 250, 0.6);
   line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.bento-card .price {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+}
+
+.bento-card .btn-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+  color: var(--night);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bento-card .btn-book:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.35);
+  color: var(--night);
 }
 
 /* Polaris card — 5th star — special glow */
@@ -713,6 +773,14 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.pack-card .card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
 .pack-card .pack-tagline {
   font-family: var(--font-heading);
   font-style: italic;
@@ -740,6 +808,23 @@ img {
   font-size: 0.85rem;
   font-weight: 300;
   color: var(--silver);
+}
+
+.pack-card .price-dual {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pack-card .price-dual .price {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+}
+
+.pack-card .price-dual .btn-book {
+  flex: 0 0 auto;
+  margin-bottom: 0;
 }
 
 .pack-card .btn-book {
@@ -811,6 +896,14 @@ img {
   margin-bottom: 1rem;
 }
 
+.about-block .card-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
 .about-block p {
   font-size: 1rem;
   line-height: 1.9;
@@ -843,10 +936,29 @@ img {
   margin-bottom: 0.8rem;
 }
 
+.about-signature .card-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
 .about-signature p {
   font-size: 0.95rem;
   color: rgba(245, 245, 250, 0.65);
   line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.signature-handwritten {
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  color: var(--gold);
+  margin-top: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: right;
 }
 
 /* --- Footer --- */

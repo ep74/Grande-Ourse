@@ -245,3 +245,13 @@
   });
 
 })();
+
+// ---- Email Protection Against Bots ----
+document.addEventListener('DOMContentLoaded', function() {
+  const emailLinks = document.querySelectorAll('.email-link');
+  emailLinks.forEach(link => {
+    const email = link.dataset.email + '@' + link.dataset.domain;
+    link.href = 'mailto:' + email;
+    link.querySelector('.email-text').textContent = email;
+  });
+});
