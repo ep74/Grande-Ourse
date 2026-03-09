@@ -526,10 +526,10 @@ img {
 /* Étoile 4 */
 .bento-card:nth-child(5) {
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
+  grid-row: 2;
 }
 
-/* Étoile 5 — Polaire — Grand */
+/* Étoile 5 — Réduite */
 .bento-card:nth-child(6) {
   grid-column: 4 / 5;
   grid-row: 2;
@@ -539,10 +539,16 @@ img {
 .bento-card:nth-child(7) {
   grid-column: 1 / 2;
   grid-row: 3;
-  grid-column: 1 / 2;
 }
 
 /* Étoile 7 */
+
+.bento-card:nth-child(8) {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+/* Étoile Polaire — À côté de la 7e */
 
 .bento-card {
   position: relative;
@@ -1096,6 +1102,10 @@ img {
   transition-delay: 0.7s;
 }
 
+.reveal-delay-8 {
+  transition-delay: 0.8s;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1148,6 +1158,11 @@ img {
     grid-column: auto;
     grid-row: auto;
   }
+
+  .bento-card:nth-child(8) {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1179,6 +1194,10 @@ img {
 
   .bento-card:nth-child(1),
   .bento-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .bento-card:nth-child(8) {
     grid-column: auto;
   }
 
