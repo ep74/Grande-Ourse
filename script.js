@@ -25,7 +25,7 @@
         y: Math.random() * height,
         radius: Math.random() * 1.8 + 0.2,
         opacity: Math.random() * 0.7 + 0.3,
-        twinkleSpeed: Math.random() * 0.02 + 0.005,
+        twinkleSpeed: Math.random() * 0.005 + 0.00125,
         twinkleOffset: Math.random() * Math.PI * 2,
         // Some stars are "blue-ish", some "warm"
         hue: Math.random() > 0.7 ? 210 + Math.random() * 40 : 40 + Math.random() * 20,
