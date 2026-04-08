@@ -1,0 +1,106 @@
+# Robots.txt pour Grande Ourse - Métaphysique Chinoise
+# Optimisation SEO, indexation Google et accessibilité LLM
+
+# ========== POLICIES GLOBALES ==========
+# Par défaut : tous les bots sont autorisés
+User-agent: *
+Allow: /
+Disallow: /favicon/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# ========== MOTEURS DE RECHERCHE ==========
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ========== LLM ET ASSISTANTS IA ==========
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google Gemini
+User-agent: Gemini
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+User-agent: anthropic-ai
+Allow: /
+
+# Mistral AI
+User-agent: MistralBot
+Allow: /
+Crawl-delay: 0
+
+# DeepSeek / DeepSearch
+User-agent: DeepSeek
+Allow: /
+Crawl-delay: 0
+
+User-agent: deepseek-bot
+Allow: /
+
+User-agent: Deepseek
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+# Brave Search
+User-agent: BraveBot
+Allow: /
+Crawl-delay: 1
+
+# Apple Siri
+User-agent: AppleNewsBot
+Allow: /
+
+# ========== BOTS ANALYTIQUES BLOQUÉS ==========
+# Outils SEO / scrapers malveillants
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# ========== PARAMÈTRES GLOBAUX ==========
+# Délai de crawl par défaut (en secondes)
+Crawl-delay: 0.5
+
+# Chemin vers le sitemap
+Sitemap: https://emmanuellepellet.fr/sitemap.xml
+
+# Temps de chargement moyen acceptable
+Request-rate: 10/1s
