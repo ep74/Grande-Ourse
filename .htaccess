@@ -1,4 +1,26 @@
-RewriteEngine On 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} !on
-RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# ---------------------------------------------------------
+# 🔒 Sécurité renforcée pour emmanuellepellet.fr
+# ---------------------------------------------------------
+
+# 0) Redirection HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 1) HSTS – Force le HTTPS partout
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# 2) CSP – Content Security Policy (version compatible avec ton site statique)
+Header set Content-Security-Policy "default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' https: data:; connect-src 'self'; frame-ancestors 'self'"
+
+# 3) Empêche le MIME sniffing
+Header set X-Content-Type-Options "nosniff"
+
+# 4) Empêche l’intégration de ton site dans un iframe (anti-clickjacking)
+Header set X-Frame-Options "SAMEORIGIN"
+
+# 5) Politique de référent stricte
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# 6) Type de contenu par défaut
+AddType text/html .html

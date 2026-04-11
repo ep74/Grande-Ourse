@@ -215,12 +215,12 @@
   });
 
   // ---- Scroll reveal with IntersectionObserver ----
-  const revealElements = document.querySelectorAll('.reveal');
+  const revealElements = document.querySelectorAll('.r');
 
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add('v');
         revealObserver.unobserve(entry.target);
       }
     });
