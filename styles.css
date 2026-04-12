@@ -31,6 +31,7 @@
   /* Typography */
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Raleway', 'Segoe UI', sans-serif;
+  --font-signature: 'Allura', cursive;
 
   /* Spacing */
   --section-pad: clamp(4rem, 10vw, 8rem) clamp(1rem, 5vw, 6rem);
@@ -995,7 +996,7 @@ img {
 }
 
 .signature-handwritten {
-  font-family: 'Allura', cursive;
+  font-family: var(--font-signature);
   font-size: 2rem;
   color: var(--gold);
   margin-top: 1.5rem;
